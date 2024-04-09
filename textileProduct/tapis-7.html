@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meubles</title>
+    <link rel="stylesheet" href="../style.css">
+
+
+    <!--===========Mediaqueries link===========-->
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <!--=============== FLATICON ===============-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <!--=================Swiper=================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+    <!--===== Partie header =====-->
+    <header class="header">
+        <div class="header_top">
+        </div>
+
+        <!--=====Bare de navigation dans le header=====-->
+        <div class="nav container">
+            <div class="nav_logo">
+                <a href="../index.html">
+                    <h1 class="nav_logonaka">Leamsi<span>Déco</span></h1>
+                    <p class="logo_slogan">La déco tout en un à portée de main</p>
+                </a>
+            </div>
+
+            <div class="header_search">
+                <input type="text" class="form-input" placeholder="Rechercher...">
+
+                <buton class="search_btn">
+                    <img src="../asset/image/chercher.svg" class="search_btn-img">
+                </buton>
+            </div>
+
+            <div class="header_users-actions">
+                <a href="registration.html" class="header_action-btn">
+                    <img src="../asset/image/utilisateur (1).png" alt="icon pour utilisateur">
+                </a>
+
+                <a href="wishlist.html" class="header_action-btn">
+                    <img src="../asset/image/icon-heart.svg" alt="icon pour le fovori">
+                    <span class="count">0</span>
+                </a>
+
+                <a href="cart.html" class="header_action-btn">
+                    <img src="../asset/image/icon-cart.svg" alt="icon pour l'achat">
+                    <span class="count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <!--La barre de navigation-->
+        <nav class="nav_menu">
+            <div class="container">
+                <ul class="menu_categories">
+                    <li class="menu_category">
+                        <a href="../index.html" class="menu_title ">Accueil</a>
+                    </li>
+
+                    <li class="menu_category">
+                        <a href="../textile-product.html" class="menu_title active-link">Textile</a>
+
+                        <ul class="dropdown_list">
+                            <li class="dropdown_item">
+                                <a href="../tapis.html">Tapis</a>
+                            </li>
+                            <li class="dropdown_item">
+                                <a href="#Coussin_prduct.html">Coussin</a>
+                            </li>
+                            <li class="dropdown_item">
+                                <a href="#torchon.html">Torchon & Serviette de table</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="menu_category">
+                        <a href="../meuble-product.html" class="menu_title ">Meubles</a>
+                    </li>
+
+                    <li class="menu_category"><a href="../luminaire-product.html" class="menu_title">Luminaire</a></li>
+
+                    <li class="menu_category">
+                        <a href="../deco.html" class="menu_title">Déco</a>
+
+                    </li>
+
+                    <li class="menu_category">
+                        <a href="../contact.html" class="menu_title">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--=== MAIN ==-->
+    <main>
+
+        <!--Animation-->
+        <section class="Animation">
+        </section>
+
+        <!--Detail du produit-->
+        <section class="produit_details container">
+            <!--Pour l'image de notre produit-->
+            <div class="Image_produit-detail">
+                <img src="../asset/textile/Tapis d'extérieur à texture en relief Olivia_1.jpg" class="image_principal" id="Main_image">
+
+                <div class="images_petite">
+                    <div class="petite_img">
+                        <img src="../asset/textile/Tapis d'extérieur à texture en relief Olivia_2.jpg" class="ptt_img">
+                    </div>
+                    <div class="petite_img">
+                        <img src="../asset/textile/Tapis d'extérieur à texture en relief Olivia_3.jpg" class="ptt_img">
+                    </div>
+                    <div class="petite_img">
+                        <img src="../asset/textile/Tapis d'extérieur à texture en relief Olivia_4.jpg" class="ptt_img">
+                    </div>
+                    <div class="petite_img">
+                        <img src="../asset/textile/Tapis d'extérieur à texture en relief Olivia_1.jpg" class="ptt_img">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--Pour le contenu textuel de produit-->
+            <div class="contenu_produit-detail">
+                <ul class="liste_lien-page container">
+                    <li><a href="../index.html" class="lien-page link">Accueil</a></li>
+                    <li><span class="lien-page">/</span></li>
+                    <li><span class="lien-page">tapis-7</span></li>
+                </ul>
+
+                <h4 class="nom_produit">Tapis d'extérieur à texture en relief Olivia</h4>
+                <h2 class="prix_produit">25.000Ar</h2>
+                <input type="number" value="1">
+                <button class="bouton_cart">Ajouter au panier</button>
+                <h4 class="nom_produit">Detail de produit</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt adipisci cum, tenetur vel delectus
+                    sapiente? Consequuntur, beatae! Sequi, nemo accusantium. Est quisquam perferendis ab illum fugiat
+                    facilis odit voluptatum veritatis.</p>
+            </div>
+
+        </section>
+
+        <!-- Petit script pour le detail de notre produit -->
+        <script>
+            var imagePrincipal = document.getElementById("Main_image");
+            var petitImage = document.getElementsByClassName("ptt_img");
+
+            petitImage[0].onclick = function () {
+                imagePrincipal.src = petitImage[0].src;
+            }
+            petitImage[1].onclick = function () {
+                imagePrincipal.src = petitImage[1].src;
+            }
+            petitImage[2].onclick = function () {
+                imagePrincipal.src = petitImage[2].src;
+            }
+            petitImage[3].onclick = function () {
+                imagePrincipal.src = petitImage[3].src;
+            }
+
+        </script>
+
+
+        <!-- Les produit recommendées -->
+        <section class="produit section container">
+            <h1 class="recommand_title">Produits Recommendées</h1>
+
+            <!--les differents produits-->
+            <div class="produit_container section grid">
+
+                <!--Produit2-->
+                <div class="mon_produit">
+                    <a href="../meubleProduct/meuble-2.html" class="image_produit">
+                        <img src="../asset/meuble/Table basse en bois d'hévéa_1.jpg" class="product_img default">
+                    </a>
+
+                    <div class="descri_produit">
+                        <h5 class="titre_produit">Table basse en bois d'hévéa</h5>
+
+                        <div class="product_price">
+                            <span>25.000Ar</span>
+                        </div>
+                    </div>
+                    <a href="#" class="action_btn cart_btn" aria-label="Add To Cart">
+                        <i class="fi fi-rs-shopping-bag-add"></i>
+                    </a>
+                </div>
+                <!--Produit3-->
+                <div class="mon_produit">
+                    <a href="../meubleProduct/meuble-3.html" class="image_produit">
+                        <img src="../asset/meuble/TABLE ROnde Duncan.jpg" class="product_img default">
+                    </a>
+
+                    <div class="descri_produit">
+                        <h5 class="titre_produit">Table Ronde Duncan</h5>
+
+                        <div class="product_price">
+                            <span>25.000Ar</span>
+                        </div>
+                    </div>
+                    <a href="#" class="action_btn cart_btn" aria-label="Add To Cart">
+                        <i class="fi fi-rs-shopping-bag-add"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!--==== Footer =====-->
+    <footer>
+        <div class="footer_container container grid">
+            <div class="footer_content">
+                <a href="index.html" class="footer_logo">
+                    <h1 class="footer_logonaka">Leamsi<span>Déco</span></h1>
+                    <p class="logo_slogan">La déco tout en un à portée de main</p>
+                </a>
+
+            </div>
+
+            <!--Pour le contact-->
+            <div class="footer_content">
+                <h3 class="footer_titre">Contact</h3>
+                <p class="footer_description">
+                    <span>Adresse : </span>Lazaret Cure Bloc F28
+                </p>
+                <p class="footer_description">
+                    <span>Tel : </span>+261 32 55 671 89
+                </p>
+
+                <div class="footer_reseau-sociaux">
+                    <h4 class="footer_subtitle">Suivez-nous</h4>
+                    <div class="footer_rs-lien">
+                        <!--Lien vers facebook-->
+                        <a href="https://www.facebook.com/profile.php?id=100006112996990">
+                            <img src="../asset/image/icon-facebook.svg" alt="" class="icon_rs">
+                        </a>
+                        <!--Lien vers instagram-->
+                        <a href="">
+                            <img src="../asset/image/icon-instagram.svg" alt="" class="icon_rs">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_titre">Catégories</h3>
+                <ul class="footer_liens">
+                    <li>
+                        <a href="index.html" class="footer_lien">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_lien">Textile</a>
+                    </li>
+                    <li>
+                        <a href="meuble-product.html" class="footer_lien">Meubles</a>
+                    </li>
+                    <li>
+                        <a href="luminaire-product.html" class="footer_lien">Luminaire</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer_lien">Déco</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--Pour l'information du site-->
+            <div class="footer_content">
+                <h3 class="footer_titre">Information</h3>
+                <ul class="footer_liens">
+                    <li>
+                        <a href="apropos.html" class="footer_lien">Qui sommes-nous ?</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="footer_lien">Nous contacter</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!--Pour le copyright-->
+        <div class="footer_bottom container">
+            <p class="copyright">
+                &copy;2024 LeamsiDéco, All right reserved
+            </p>
+            <span class="fait_par">Leamsitech firm</span>
+        </div>
+
+    </footer>
+
+
+
+    <!--==== SWIPER ====-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--==== MAIN JS ====-->
+    <script src="../main.js"></script>
+</body>
+
+</html>
