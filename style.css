@@ -1005,4 +1005,35 @@ footer
     text-align: center;
 }
 
+/* A propos */
+.heading-ab
+{
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 20px;
+    font-size: var(--h1-font-size);
+}
+.about_div
+{
+    display: flex;
+    align-items: center;
+}
 
+.image_about
+{
+    flex:1 1 39rem;
+}
+
+.image_ab
+{
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.content
+{
+    flex:1 1 51rem;
+    padding:5rem;
+}
