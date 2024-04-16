@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique en ligne pour decoration</title>
+    <title>Login</title>
 
     <!--=================Lien CSS==============-->
     <link rel="stylesheet" href="style.css">
@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <!--=======CREATION HEADER=======-->
     <header class="header">
         <div class="header_top">
@@ -46,7 +45,7 @@
             </div>
 
             <div class="header_users-actions">
-                <a href="login.html" class="header_action-btn">
+                <a href="registration.html" class="header_action-btn">
                     <img src="asset/image/utilisateur (1).png" alt="icon pour utilisateur">
                 </a>
 
@@ -67,7 +66,7 @@
             <div class="container">
                 <ul class="menu_categories">
                     <li class="menu_category">
-                        <a href="index.html" class="menu_title active-link">Accueil</a>
+                        <a href="index.html" class="menu_title">Accueil</a>
                     </li>
 
                     <li class="menu_category">
@@ -108,129 +107,41 @@
 
     </header>
 
-    <!--======== Partie Main =======-->
-    <main>
-        <div class="slider">
-            <div class="sliderbox swiper">
-                <div class="wrap swiper-wrapper">
-                    <div class="item swiper-slide">
-                        <div class="image">
-                            <div class="images">
-                                <img src="asset/image/meubleswip.jpg" alt="">
-                            </div>
-                            <div class="info_title">
-                                <div class="container wide">
-                                    <div class="wrap">
-                                        <h3 class="title_image">Nous vous offrons des meilleurs de nos meubles</h3>
+    <!-- Enregistrer un utilisateur -->
+    <section class="section ">
+        <div class="auth_container">
+          <div class="auth_img">
+            <img src="asset/image/Mood_image-H.jpg" alt="" class="auth_image" />
+          </div>
+          <div class="auth_content">
+            <form action="" method="" class="auth_form">
+              <h2 class="form_title">CONNECTEZ-VOUS</h2>
 
-                                        <div class="button">
-                                            <a href="meuble-product.html" class="btn_shop">Voir plus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Slide2-->
-                    <div class="item swiper-slide">
-                        <div class="image">
-                            <div class="images">
-                                <img src="asset/image/LuminaireSwiper.webp" alt="">
-                            </div>
-                            <div class="info_title">
-                                <div class="container wide">
-                                    <div class="wrap">
-                                        <h3 class="title_image"> Éclairez vos espaces, éveillez vos sens !</h3>
+              <div class="form_group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Votre email" class="form_input" />
+              </div>
 
-                                        <div class="button">
-                                            <a href="luminaire-product.html" class="btn_shop">Voir plus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="form_group form_pass">
+                <label for="password">Mot de passe</label>
+                <input id="password" type="password" placeholder="Votre mot de passe" class="form_input" />
+              </div>
 
-                    <!--Slide3-->
-                    <div class="item swiper-slide">
-                        <div class="image">
-                            <div class="images">
-                                <img src="asset/image/Tapisswip.jpg" alt="">
-                            </div>
-                            <div class="info_title">
-                                <div class="container wide">
-                                    <div class="wrap">
-                                        <h3 class="title_image">Les Tapis</h3>
-
-                                        <div class="button">
-                                            <a href="tapis" class="btn_shop">Voir plus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
+              <div class="form_group">
+                <button class="form_btn">
+                  <a href="#" class="form_link">Se connecter</a>
+                </button>
+              </div>
+              <div class="form_group">
+                <span
+                  >Pas de compte?
+                  <a href="registration.html" class="form_auth_link">S'inscrire</a></span
+                >
+              </div>
+            </form>
+          </div>
         </div>
-
-        <!--============Categories===============-->
-        <section class="categories container section">
-            <h3 class="section__title"><span>Nos</span> Categories</h3>
-
-            <div class="categories__container swiper_1">
-                <div class="swiper-wrapper">
-                    <a href="meuble-product.html" class="category__item swiper-slide">
-                        <img src="asset/image/categori_1.webp" alt="" class="category__img">
-                        <h3 class="category__title">Meubles</h3>
-                    </a>
-
-                    <a href="luminaire-product.html" class="category__item swiper-slide">
-                        <img src="asset/image/categori_2.webp" alt="" class="category__img">
-                        <h3 class="category__title">Luminaires</h3>
-                    </a>
-
-                    <a href="deco.html" class="category__item swiper-slide">
-                        <img src="asset/image/categori_3.webp" alt="" class="category__img">
-                        <h3 class="category__title">Déco</h3>
-                    </a>
-
-                    <a href="tapis.html" class="category__item swiper-slide">
-                        <img src="asset/image/categori_4.webp" alt="" class="category__img">
-                        <h3 class="category__title">Tapis</h3>
-                    </a>
-                    <a href="deco.html" class="category__item swiper-slide">
-                        <img src="asset/image/categori_5.webp" alt="" class="category__img">
-                        <h3 class="category__title">Linge de maison</h3>
-                    </a>
-
-                </div>
-
-                <div class="swiper-btn-next"><i class="fi fi-rs-angle-right"></i></div>
-                <div class="swiper-btn-prev"><i class="fi fi-rs-angle-left"></i></div>
-
-            </div>
-        </section>
-
-        <!--========About========-->
-        <section class="about container section">
-            <h3 class="section__title"><span>A</span> propos</h3>
-            <div class="about_section ">
-                <p> Leamsi<span>Déco</span> est une boutique en ligne qui a comme mission d'embellir votre Déco
-                    Intérieur, de faire de votre maison la plus belle et aussi la plus agréable possible. Nous savons
-                    exactement que se sentir bien chez-soi est une chose indispensable pour notre bien-être personnel.
-                    Grâce à notre déco votre maison va devenir une espace ... <a href="apropos.html"
-                        class="btn_know">Savoir plus</a>
-                </p>
-
-            </div>
-        </section>
-
-    </main>
+      </section>
 
 
     <!--======== Partie Footer ======-->
@@ -318,11 +229,7 @@
     </footer>
 
 
-    <!--============Pour le swiper=========-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!--============MainJs===============-->
-    <script src="main.js"></script>
 </body>
 
 </html>

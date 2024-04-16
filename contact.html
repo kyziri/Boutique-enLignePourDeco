@@ -81,13 +81,13 @@
 
                         <ul class="dropdown_list">
                             <li class="dropdown_item">
-                                <a href="tapis_prduct.html">Tapis</a>
+                                <a href="tapis.html">Tapis</a>
                             </li>
                             <li class="dropdown_item">
-                                <a href="Coussin_prduct.html">Coussin</a>
+                                <a href="#Coussin_prduct.html">Coussin</a>
                             </li>
                             <li class="dropdown_item">
-                                <a href="torchon_prduct.html">Torchon & Serviette de table</a>
+                                <a href="#torchon_prduct.html">Torchon & Serviette de table</a>
                             </li>
                         </ul>
 
@@ -136,18 +136,32 @@
         <section class="contact-info section container ">
             <h1 class="heading-ab"> Contacter-nous</h1>
             <div class="diveder"></div>
-            
-            <form action="mail.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject">
-                <label for="message">Message</label>
-                <textarea name="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send">
-            </form>
+
+            <div class="contenir">
+            <form action="" method="" class="auth_form">
+
+                <div class="form_group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="Votre nom" class="form_input" />
+                  </div>
+
+                <div class="form_group">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="Votre email" class="form_input" />
+                </div>
+  
+                <div class="form_group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Votre message" cols="30" rows="6" class="form_input"></textarea>
+                </div>
+  
+                <div class="form_group">
+                  <button class="form_btn">
+                    <a href="#" class="form_link">Envoyer</a>
+                  </button>
+                </div>
+              </form>
+            </div>
 
         </section>
 
